@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UiWidgetsForm</string>
+    <string-array name="select_interest">
+        <item>select field</item>
+        <item>Android Development</item>
+        <item>Web Development </item>
+        <item>Data Science</item>
+        <item>Cyber Security</item>
+        <item>Machine Learning</item>
+        <item>Artificial Intelligence </item>
+    </string-array>
+</resources>

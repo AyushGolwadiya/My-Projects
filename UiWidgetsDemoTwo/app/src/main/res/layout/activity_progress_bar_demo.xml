@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressBarDemo"
+    android:gravity="center"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/pb_on_st"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:background="@drawable/custom_progress_"
+        android:max="20"
+        />
+    <Button
+        android:id="@+id/btn_start_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickStart"
+        />
+
+
+
+</LinearLayout>

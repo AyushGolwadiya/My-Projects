@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FirstDemo</string>
+    <string name="btn_text">Click Me</string>
+    <string name="reg_btn">Register</string>
+</resources>

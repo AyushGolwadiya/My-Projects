@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="20dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Registration Form"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/text_view_design"
+    android:drawableLeft="@drawable/registration"
+
+    android:textSize="20sp"
+    android:padding="10dp"
+    />
+
+<EditText
+    android:id="@+id/et_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Name"
+    android:paddingBottom="10dp"
+    />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Password"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone"
+        android:paddingTop="10dp"
+        android:inputType="phone"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:paddingRight="40dp"
+            >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:paddingRight="40dp">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/rb_confidential"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confidential"
+            >
+        </RadioButton>
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your interested Languages"
+        android:layout_marginTop="5dp">
+
+    </TextView>
+    <CheckBox
+        android:id="@+id/cb_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C++ "/>
+    <CheckBox
+        android:id="@+id/cb_java"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"/>
+    <CheckBox
+        android:id="@+id/cb_python"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Python"/>
+    <CheckBox
+        android:id="@+id/cb_dsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DSA"/>
+
+    <CheckBox
+        android:id="@+id/cb_dbms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DBMS"/>
+
+
+    <Spinner
+        android:id="@+id/spn_select"
+        android:entries="@array/select_interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Select"
+        android:padding="10dp"
+        android:textAlignment="viewStart"
+        android:background="@drawable/text_view_design"
+        android:layout_marginBottom="5dp"
+        android:theme="@style/city_spinner"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Values"
+        android:textSize="15dp"
+        android:onClick="getValues"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

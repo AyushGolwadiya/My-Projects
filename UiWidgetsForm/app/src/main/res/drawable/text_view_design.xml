@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+    android:startColor="#606DDF"
+    android:angle="45"
+    android:endColor="#FD4141"
+    />
+    <stroke
+        android:color="@color/white"
+        android:width="1dp"/>
+
+
+    <corners
+        android:radius="@dimen/spinner_boarder"
+        />
+</shape>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FInd Car</string>
+    <string name="find_car">Find car !! </string>
+    <string name="company_name">AG Tech Private Limited</string>
+    <string name="get_Started">Get Started </string>
+    <string name="brands"></string>
+    <string-array name="car_types">
+        <item>Sedan</item>
+        <item>CUV</item>
+        <item>Coupe</item>
+        <item>SUV</item>
+        <item>RoadSter</item>
+        <item>HatchBack</item>
+        <item>SuperCar</item>
+    </string-array>
+</resources>
