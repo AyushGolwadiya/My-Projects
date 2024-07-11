@@ -97,7 +97,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: const Text('Save'),
               ),
-
               const SizedBox(height: 20,),
               StreamBuilder<QuerySnapshot>(stream: FirebaseFirestore.instance.collection('users').snapshots(), builder: (context,snapshot){
                 if(snapshot.connectionState == ConnectionState.active){
@@ -110,19 +109,14 @@ class _HomeScreenState extends State<HomeScreen> {
                          String docId = snapshot.data!.docs[index].id;
                          return ListTile(
                            title: Text(userdata['name'] + " (${userdata['age']})" ?? ''),
-
-
                            subtitle: Text(userdata['email']?? ''),
                            trailing: IconButton(
                              icon: const Icon(Icons.delete),
                            onPressed: (){
                               deleteUser(docId);
                            },),
-
                          );
                         },
-                      
-                      
                       ),
                     );
                   }else {
